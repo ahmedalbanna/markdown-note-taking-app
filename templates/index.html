@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>تطبيق تدوين الملاحظات</title>
+    <link rel="stylesheet" href="static/style.css"> 
+</head>
+<body>
+    <h1>تطبيق تدوين الملاحظات</h1>
+
+    <h2>تحميل ملف Markdown</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">تحميل وفحص</button>
+    <div id="grammarErrors"></div>
+
+    <h2>إنشاء ملاحظة جديدة</h2>
+    <input type="text" id="filenameInput" placeholder="اسم الملف">
+    <textarea id="markdownInput" placeholder="اكتب ملاحظاتك هنا باستخدام Markdown"></textarea>
+    <button onclick="saveNote()">حفظ الملاحظة</button>
+
+    <h2>الملاحظات المحفوظة</h2>
+    <ul id="notesList"></ul>
+
+    <h2>عرض ملاحظة</h2>
+    <div id="renderedNote"></div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
